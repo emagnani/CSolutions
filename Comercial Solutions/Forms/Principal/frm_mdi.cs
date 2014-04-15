@@ -307,6 +307,23 @@ private void toolStripContainer5_ContentPanel_Load(object sender, EventArgs e)
 
 }
 
+private void toolStripContainer2_TopToolStripPanel_Click(object sender, EventArgs e)
+{
+
+}
+
+private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    frm_Menu_aplicacion x =new frm_Menu_aplicacion();
+    x.Show();
+}
+
+private void asignarToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    frm_Menu_crear_permiso_rol x = new frm_Menu_crear_permiso_rol();
+    x.Show();
+}
+
 
    }
 }

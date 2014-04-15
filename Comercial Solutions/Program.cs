@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using i3nRiqJSON;
 using Comercial_Solutions.Forms.Principal;
+using Comercial_Solutions.Forms.Seguridad;
 
 namespace Comercial_Solutions
 {
@@ -18,6 +19,7 @@ namespace Comercial_Solutions
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new frm_login());
             Application.Run(new frm_login());
         }
     }

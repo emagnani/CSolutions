@@ -64,6 +64,7 @@ namespace Comercial_Solutions.Forms.Seguridad
         
         private void button1_Click(object sender, EventArgs e)
         {
+            try{
             if (txt_nombre.Text.Equals(""))
                 
             {
@@ -173,6 +174,9 @@ namespace Comercial_Solutions.Forms.Seguridad
                 }
 
             }
+             }
+            catch (Exception ex) { 
+        }
 
         }
 
@@ -192,10 +196,19 @@ namespace Comercial_Solutions.Forms.Seguridad
 
         public void cargarlistausuarios() {
 
-
+            try{
 
             string sql = "SELECT nom_Usuario AS Nombre,usu_Usuario AS Usuario, con_Usuario AS Password,es_Usuario AS Estado FROM usuarios";
             dataGridView1.DataSource = gCon.consulta_DataGridView(sql);
+             }
+            catch (Exception ex) { }
+        
+
+        }
+
+        private void cmb_roles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

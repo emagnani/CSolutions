@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu_Asignacion_permisos));
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
@@ -71,6 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
@@ -80,7 +83,7 @@
             // txtu
             // 
             this.txtu.Enabled = false;
-            this.txtu.Location = new System.Drawing.Point(104, 213);
+            this.txtu.Location = new System.Drawing.Point(104, 167);
             this.txtu.Name = "txtu";
             this.txtu.Size = new System.Drawing.Size(100, 20);
             this.txtu.TabIndex = 4;
@@ -89,7 +92,7 @@
             // txtc
             // 
             this.txtc.Enabled = false;
-            this.txtc.Location = new System.Drawing.Point(104, 239);
+            this.txtc.Location = new System.Drawing.Point(104, 193);
             this.txtc.Name = "txtc";
             this.txtc.Size = new System.Drawing.Size(100, 20);
             this.txtc.TabIndex = 5;
@@ -108,7 +111,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 220);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 7;
@@ -117,7 +121,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 246);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 8;
@@ -131,10 +136,12 @@
             this.cmb_roles.Size = new System.Drawing.Size(100, 21);
             this.cmb_roles.TabIndex = 9;
             this.cmb_roles.Visible = false;
+            this.cmb_roles.SelectedIndexChanged += new System.EventHandler(this.cmb_roles_SelectedIndexChanged);
             // 
             // lbl_ROL
             // 
             this.lbl_ROL.AutoSize = true;
+            this.lbl_ROL.ForeColor = System.Drawing.Color.White;
             this.lbl_ROL.Location = new System.Drawing.Point(13, 91);
             this.lbl_ROL.Name = "lbl_ROL";
             this.lbl_ROL.Size = new System.Drawing.Size(26, 13);
@@ -149,7 +156,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(211, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(450, 273);
+            this.dataGridView1.Size = new System.Drawing.Size(450, 217);
             this.dataGridView1.TabIndex = 11;
             // 
             // cmb_area
@@ -165,6 +172,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(12, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
@@ -175,7 +183,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 297);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.ClientSize = new System.Drawing.Size(673, 239);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmb_area);
             this.Controls.Add(this.dataGridView1);
@@ -190,8 +199,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_apellido);
             this.Controls.Add(this.txt_nombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Menu_Asignacion_permisos";
-            this.Text = "Nuevo Usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

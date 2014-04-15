@@ -40,6 +40,10 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.crearAplicacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer3 = new System.Windows.Forms.ToolStripContainer();
             this.toolStripContainer4 = new System.Windows.Forms.ToolStripContainer();
             this.toolStripContainer5 = new System.Windows.Forms.ToolStripContainer();
@@ -105,6 +109,10 @@
             this.toolStripContainer2.TabIndex = 3;
             this.toolStripContainer2.Text = "toolStripContainer2";
             // 
+            // toolStripContainer2.TopToolStripPanel
+            // 
+            this.toolStripContainer2.TopToolStripPanel.Click += new System.EventHandler(this.toolStripContainer2_TopToolStripPanel_Click);
+            // 
             // toolStrip1
             // 
             this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -114,12 +122,13 @@
             this.toolStripDropDownButton1,
             this.toolStripLabel1,
             this.toolStripLabel2,
-            this.toolStripLabel3});
+            this.toolStripLabel3,
+            this.toolStripDropDownButton2});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(9, 3);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(206, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(235, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -166,6 +175,40 @@
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(80, 22);
             this.toolStripLabel3.Text = "Base de Datos";
+            // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearAplicacionToolStripMenuItem});
+            this.toolStripDropDownButton2.Image = global::Comercial_Solutions.Properties.Resources.herramienta;
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(29, 22);
+            this.toolStripDropDownButton2.Text = "toolStripDropDownButton2";
+            // 
+            // crearAplicacionToolStripMenuItem
+            // 
+            this.crearAplicacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearToolStripMenuItem,
+            this.asignarToolStripMenuItem});
+            this.crearAplicacionToolStripMenuItem.Name = "crearAplicacionToolStripMenuItem";
+            this.crearAplicacionToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.crearAplicacionToolStripMenuItem.Text = "Aplicaciones";
+            // 
+            // crearToolStripMenuItem
+            // 
+            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.crearToolStripMenuItem.Text = "Crear";
+            this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
+            // 
+            // asignarToolStripMenuItem
+            // 
+            this.asignarToolStripMenuItem.Name = "asignarToolStripMenuItem";
+            this.asignarToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.asignarToolStripMenuItem.Text = "Asignar";
+            this.asignarToolStripMenuItem.Click += new System.EventHandler(this.asignarToolStripMenuItem_Click);
             // 
             // toolStripContainer3
             // 
@@ -296,7 +339,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "frm_mdi";
-            this.Text = "Softland Solutions";
+            this.Text = "Comercial Solutions";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_mdi_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -343,6 +386,10 @@
         private System.Windows.Forms.Timer tmrLoad;
         private System.Windows.Forms.ListBox lstMODULOS;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
+        private System.Windows.Forms.ToolStripMenuItem crearAplicacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignarToolStripMenuItem;
     }
 }
 
